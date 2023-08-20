@@ -1,0 +1,30 @@
+.app {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    darkslateblue,
+    midnightblue
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 4px 20px;
+
+  position: sticky;
+  top: 0;
+
+  background-color: mediumslateblue;
+  border-bottom: 1px solid black;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  gap: 16px;
+}

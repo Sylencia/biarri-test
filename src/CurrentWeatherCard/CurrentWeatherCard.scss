@@ -1,0 +1,59 @@
+.weather-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "location location"
+    "temp icon";
+  grid-template-rows: 64px auto;
+  width: 400px;
+  height: 200px;
+  padding: 8px;
+  background-color: floralwhite;
+  border-radius: 16px;
+  border: 2px solid darkgray;
+
+  overflow: hidden;
+}
+
+.weather-location {
+  grid-area: location;
+
+  .searchedLocation {
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 400px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .country {
+    font-size: 1.125rem;
+    color: slategray;
+  }
+}
+
+.weather-icon {
+  grid-area: icon;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-temp {
+  grid-area: temp;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .actual-temp {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .feels-temp {
+    color: gray;
+  }
+}

@@ -1,0 +1,51 @@
+.search-container {
+  background-color: floralwhite;
+  border-radius: 9999px;
+  height: 48px;
+  min-width: 300px;
+  max-width: 600px;
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  grid-template-areas: "pin input button";
+}
+
+.search-pin {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-area: pin;
+}
+
+.search-input {
+  grid-area: input;
+  border: none;
+  font-size: 1.125rem;
+  background-color: floralwhite;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: inherit;
+  }
+}
+
+.search-button {
+  height: 48px;
+  width: 48px;
+  border-radius: 9999px;
+  border: none;
+  background-color: lightgray;
+
+  &:active {
+    background-color: darken(lightgray, 10%);
+  }
+
+  grid-area: button;
+}

@@ -1,0 +1,36 @@
+.forecast-card {
+  width: 400px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid darkgray;
+  padding: 8px;
+  background: floralwhite;
+
+  display: grid;
+  grid-template-areas: "time temp icon";
+  grid-template-columns: auto 96px 48px;
+
+  .time {
+    grid-area: time;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .temp {
+    grid-area: temp;
+
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    grid-area: icon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
